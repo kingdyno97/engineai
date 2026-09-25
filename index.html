@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veritas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="logo">VERITAS</div>
+      <button id="new-chat" class="btn-secondary">+ New chat</button>
+      <div class="model-section">
+        <label>Model</label>
+        <select id="model-select"></select>
+      </div>
+      <div class="sidebar-footer">
+        <p>Local · Private · No cloud</p>
+      </div>
+    </aside>
+
+    <main>
+      <header>
+        <h1 id="title">Veritas</h1>
+        <span id="status">connecting…</span>
+      </header>
+
+      <div id="chat" class="chat"></div>
+
+      <form id="form" class="composer">
+        <textarea id="input" placeholder="Ask anything…" rows="1" autofocus></textarea>
+        <button type="submit" id="send" title="Send">↑</button>
+      </form>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
